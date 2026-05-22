@@ -7,7 +7,7 @@ import AdminDashboard from './pages/AdminDashboard';
 import LibrarianDashboard from './pages/LibrarianDashboard';
 import StudentDashboard from './pages/StudentDashboard';
 
-const API_BASE = 'http://localhost:3000/api';
+const API_BASE = '/api';
 
 const INITIAL_BOOKS = [
   { id: 1, title: 'Introduction to Algorithms', author: 'Thomas H. Cormen', status: 'Available' },

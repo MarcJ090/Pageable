@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
+import LogoSrc from '../assets/logo.png';
 
 // Logo — uses logo.png from assets if available, else text fallback
 export function Logo({ size = 'md' }) {
@@ -11,7 +12,7 @@ export function Logo({ size = 'md' }) {
     <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
       {!imgError ? (
         <img
-          src="/src/assets/logo.png"
+          src={LogoSrc}
           alt="Pageable"
           style={{ width: sz.icon, height: sz.icon, objectFit: 'contain', borderRadius: 8 }}
           onError={() => setImgError(true)}
